@@ -57,5 +57,13 @@ namespace TextEditor
                 range.Save(fileStream, DataFormats.Rtf);
             }
         }
+
+        private void cmbFontFamily_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // 判斷式：必須要有選擇項目，才會做文字格式改變
+            if (cmbFontFamily.SelectedItem != null)
+                // 將rtbText豐富文字框所選的項目，套用所設定的字型
+                rtbText.Selection.ApplyPropertyValue(Inline.FontFamilyProperty, cmbFontFamily.SelectedItem);
+        }
     }
 }
