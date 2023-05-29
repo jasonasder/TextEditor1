@@ -11,9 +11,9 @@
         <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Height="40" Margin="130,25,0,0" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.994,0.385" FontSize="16" Click="btnSave_Click"/>
         <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Height="25" Margin="230,40,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="cmbFontFamily_SelectionChanged"/>
         <ComboBox x:Name="cmbFontSize" HorizontalAlignment="Left" Height="25" Margin="375,40,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Height="25" Margin="520,40,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.994,0.385" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Height="25" Margin="635,40,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.994,0.385" FontSize="16"/>
-        <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Height="25" Margin="580,40,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.994,0.385" FontSize="16" FontStyle="Italic"/>
+        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Height="25" Margin="520,40,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.994,0.385" FontSize="16" FontWeight="Bold" Click="btnBold_Click"/>
+        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Height="25" Margin="635,40,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.994,0.385" FontSize="16" Click="btnUnderline_Click"/>
+        <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Height="25" Margin="580,40,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.994,0.385" FontSize="16" FontStyle="Italic" Click="btnItalic_Click"/>
         <RichTextBox x:Name="rtbText" HorizontalAlignment="Left" Height="290" Margin="25,95,0,0" VerticalAlignment="Top" Width="635">
             <FlowDocument>
                 <Paragraph>
